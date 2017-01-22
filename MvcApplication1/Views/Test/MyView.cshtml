@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "MyView";
+}
+@model MvcApplication1.ViewModel.EmployeeViewModel
+    @*
+    <div>
+        @{
+            MvcApplication1.Models.Employee emp = (MvcApplication1.Models.Employee)
+                ViewData["Employee"];
+        }
+
+        <b>Employee Details </b><br />
+        Employee Name : @emp.FirstName @emp.LastName <br />
+        Employee Salary: @emp.Salary.ToString("C")
+    </div>
+        *@
+    Hello @Model.EmployeeName
+    <hr />
+    <div>
+    <b>Employee Details</b><br />
+        Employee Name : @Model.EmployeeName <br />
+    <span style="background-color:@Model.SalaryColor">
+            Employee Salary: @Model.Salary
+    </span>
+    </div>
